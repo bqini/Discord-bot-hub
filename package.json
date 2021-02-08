@@ -1,0 +1,19 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "prompt-sync": "^4.2.0",
+    "shelljs": "^0.8.4",
+    "sleep": "^6.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm i",
+    "urmom": "ls -I node_modules -I start.js -I managebots.js -I package.json -I package-lock.json -I app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
