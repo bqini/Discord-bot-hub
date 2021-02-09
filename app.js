@@ -7,10 +7,10 @@ const {
 var commandsf = "commands"
 const readline = require('readline')
 const blank = '\n'.repeat(process.stdout.rows)
-var version = "1.2.21"
+var version = "0.1.1"
 var botDir;
 
-console.log("Welcome to Vedux's discord bot hub \nPlease Select what you are here for")
+console.log("Welcome to Vedux's discord bot hub version " + version + "\nPlease Select what you are here for")
 console.log("[1] Would you like to manage bots? \n[2] Would you like to setup a bot?")
 var ManageInstall = parseInt(prompt('Answer Here (1/2): '));
 if (ManageInstall == 1) {
