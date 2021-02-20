@@ -9,27 +9,27 @@ var version = "0.2.1-stable";
 var botDir;
 
 console.log(
-  "Welcome to Vedux's discord bot hub version " + version + "\nPlease Select what you are here for"
+  "Welcome to Discord Bot Hub v" + version + ".\nPlease select one of the following:"
 );
 console.log(
   "[1] Would you like to manage bots? \n[2] Would you like to setup a bot? \n[3] Would you like to update DBH?"
 );
-var ManageInstall = parseInt(prompt("Answer Here (1/2/3): "));
+var ManageInstall = parseInt(prompt("Answer here. [1/2/3]: "));
 if (ManageInstall == 1) {
-  console.log("Please wait while you get redirected");
+  console.log("Please wait while you get redirected.");
   sleep.sleep(3);
   console.log(blank);
   readline.cursorTo(process.stdout, 0, 0);
   readline.clearScreenDown(process.stdout);
   require("child_process").fork("managebots.js");
 } else if (ManageInstall == 2) {
-  console.log("Please wait while everything is settup");
+  console.log("Please wait while everything is being setup.");
   sleep.sleep(2);
 
   console.log("[1] Discord.js \n[2] Discord.py");
-  var Language = parseInt(prompt("Answer Here (1/2): "));
+  var Language = parseInt(prompt("Answer here. [1/2]: "));
   if (Language == 2) {
-    console.log("Sorry, Discord.py is still in the works, Will be comming in the beta very soon");
+    console.log("Sorry, Discord.py isn't available right now. It is in the works, however I plan to add this in the very near future.");
     setTimeout(function () {
       return process.exit(22);
     }, 1000);
@@ -37,22 +37,22 @@ if (ManageInstall == 1) {
   console.log(blank);
   readline.cursorTo(process.stdout, 0, 0);
   readline.clearScreenDown(process.stdout);
-  console.log("[1] Basic bot with command handler \n[2] Make your own project");
-  var djssetup = parseInt(prompt("Answer Here (1/2): "));
+  console.log("[1] Basic bot with command handler. \n[2] Make your own project.");
+  var djssetup = parseInt(prompt("Answer here. [1/2]: "));
   if (djssetup == 1) {
-    console.log("Setting up discord.js bot");
+    console.log("Setting up Discord.js bot");
 
     var botDirName = prompt("What do you want your bot directory to be called?: ");
-    var botDirConfirmation = prompt("Are you sure you want it to be " + botDirName + " (y/n)?: ");
+    var botDirConfirmation = prompt("Are you sure you want the bot directory to be called " + botDirName + "? [y/n]: ");
     if (botDirConfirmation == "y") {
       console.log(blank);
       readline.cursorTo(process.stdout, 0, 0);
       readline.clearScreenDown(process.stdout);
-      console.log("Proceeding now");
+      console.log("Proceeding now.");
 
-      var token = prompt("What is your bot Token?: ");
-      var prefix = prompt("What do you want your Prefix to be?: ");
-      console.log("Setting up the bot directrory ");
+      var token = prompt("What is your bot token?: ");
+      var prefix = prompt("What do you want your prefix to be?: ");
+      console.log("Setting up the bot directory. ");
       sleep.sleep(3);
       botDir = `${botDirName}`;
       if (!fs.existsSync(botDir)) {
@@ -114,7 +114,7 @@ client.login(client.token)
         if (err) throw err;
 
         // success case, the file was saved
-        console.log("Index.js has been mades!");
+        console.log("Index.js has been made!");
       });
 
       var command1 = `
@@ -205,14 +205,14 @@ module.exports.help = {
         if (err) throw err;
 
         // success case, the file was saved
-        console.log("Manage.js had been made!");
+        console.log("Manage.js has been made!");
         console.clear();
-        console.log("Would you like to manage " + botDir);
-        console.log("Comming here will allow you too install bot packages etc (y/n)");
+        console.log("Would you like to manage " + botDir + "?");
+        console.log("Coming here will allow you to install bot packages etc [y/n]");
         var manageafter = prompt();
 
         console.log(
-          "To enter the manage panel aka the hub, You can also start this script again then send 1 instead."
+          "To enter the manage panel via the hub, You can also start this script again then send 1 instead."
         );
         sleep.sleep(5);
         if ((manageafter = "y")) {
@@ -221,7 +221,7 @@ module.exports.help = {
           console.clear();
           require("child_process").fork("managebots.js");
         } else if (manageafter) {
-          console.log("If you ever want to manage the bot just run this script again and type 1");
+          console.log("If you ever want to manage the bot, just run this script again and type 1");
         }
       });
     }
@@ -233,7 +233,7 @@ module.exports.help = {
 }
 
 if (djssetup == 2) {
-  console.log('Sorry, this will be introduced in verion "0.3.0"');
+  console.log('Sorry, this will be introduced in version "0.3.0"');
 }
 if (botDirConfirmation == "n") {
   console.log("Ending process");
