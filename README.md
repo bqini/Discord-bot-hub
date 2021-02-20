@@ -6,7 +6,7 @@ This project is something you can use to manage your discord bots quickly and ea
 
 # Setting this project up!
 * First<br>
-Open up the console, Then paste this in <br>`git clone https://github.com/Vedux-Development/Discord-bot-hub.git && cd Discord-bot-hub && npm start`<br>Baisaccly what this is doing is setting up the project and installing all the packages<br>
+Open up the console, Then paste this in <br>`git clone https://github.com/ducksquaddd/discord-bot-hub.git && cd Discord-bot-hub && npm start`<br>Baisaccly what this is doing is setting up the project and installing all the packages<br>
 * Second <br>
 You will notice that you're already cd into because of the thing you pasted<br>You will want to then type `node app.js`<br>You can go on from there 
 
