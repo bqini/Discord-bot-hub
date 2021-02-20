@@ -35,4 +35,4 @@ To update you need [curl](https://curl.se/) if you have curl you can run <br>
 This project will support python in the comming updates after node.js is all setup and the hub is all setup too.
 
 # Discord
-You can join are discord here! https://discord.gg/Vtht6mSNky
+You can join are discord here! https://discord.gg/rS6tB2C
