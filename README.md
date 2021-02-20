@@ -15,7 +15,6 @@ Release date: `2/18/21` <br>
 Update Version: `0.2.4` <br>
 In this update we have released a way to update within the code itself.<br>
 Thanks to [TheMeow](https://themeow.ml/) for helping us!<br>
-Update by running `cd Discord-bot-hub && curl https://raw.githubusercontent.com/Vedux-Development/Discord-bot-hub/main/app.js > index.js`
 
 # More
 
@@ -26,10 +25,6 @@ You may have noticed at the start is asked if you want to go to the bot hub that
 
 # Maintained by
 This project is owned by Vedux Development but maintained by Ducksquaddd
-
-# Updates
-To update you need [curl](https://curl.se/) if you have curl you can run <br>
-`cd Discord-bot-hub && curl https://raw.githubusercontent.com/Vedux-Development/Discord-bot-hub/main/app.js > index.js`
 
 # Python
 This project will support python in the comming updates after node.js is all setup and the hub is all setup too.
